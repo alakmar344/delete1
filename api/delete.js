@@ -1,5 +1,5 @@
 export const config = {
-  runtime: "nodejs18.x"
+  runtime: "nodejs"
 };
 
 export default async function handler(req, res) {
@@ -14,7 +14,6 @@ export default async function handler(req, res) {
 
     console.log("🔑 DIFY_KEY loaded");
 
-    // Test call to Dify API
     const list = await fetch("https://api.dify.ai/v1/conversations", {
       headers: { Authorization: `Bearer ${key}` }
     });
