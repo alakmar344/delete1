@@ -1,9 +1,16 @@
 {
-  "functions": {
-    "api/delete.js": {
-      "runtime": "nodejs"
+  "builds": [
+    {
+      "src": "api/delete.js",
+      "use": "@vercel/node"
     }
-  },
+  ],
+  "routes": [
+    {
+      "src": "/api/delete",
+      "dest": "/api/delete.js"
+    }
+  ],
   "crons": [
     {
       "path": "/api/delete",
