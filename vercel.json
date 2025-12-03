@@ -1,4 +1,9 @@
 {
+  "functions": {
+    "api/delete.js": {
+      "runtime": "nodejs"
+    }
+  },
   "crons": [
     {
       "path": "/api/delete",
